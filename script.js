@@ -16,7 +16,7 @@ document.getElementById('start-btn').addEventListener('click',()=> {
             if (speechResult.includes('open calculator')) {
                 speak('Opening calculator');
                 window.open('calculator://');
-            } else if(speechResult.includes('open whatsapp')||speechResult.includes('open whatsapp')){
+            } else if(speechResult.includes('open whatsapp')||speechResult.includes('open whatsup')){
                 speak('Opening whatsapp');
                 window.open('WhatsApp://');
             }else {
