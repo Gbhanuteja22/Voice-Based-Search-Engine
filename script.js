@@ -16,7 +16,10 @@ document.getElementById('start-btn').addEventListener('click',()=> {
             if (speechResult.includes('open calculator')) {
                 speak('Opening calculator');
                 window.open('calculator://');
-            } else {
+            } else if(speechResult.includes('open whatsapp')||speechResult.includes('open whatsapp')){
+                speak('Opening whatsapp');
+                window.open('WhatsApp://');
+            }else {
                 speak(`Searching for ${speechResult}`);
                 const googleSearchURL=`https://www.google.com/search?q=${encodeURIComponent(speechResult)}`;
                 window.location.href=googleSearchURL;
